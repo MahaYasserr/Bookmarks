@@ -1,0 +1,61 @@
+body{
+    background: url(img/room.jpg);
+    background-size: cover;
+    color: rgb(243, 235, 235);
+}
+h1{
+    font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.5rem;
+  position: relative;
+  text-shadow: -1px -1px 0 rgb(133, 68, 3), 1px -1px 0 rgb(133, 68, 3), 1px 1px 0 rgb(133, 68, 3),
+    1px 1px 0 rgb(133, 68, 3);
+  
+
+}
+
+h1::before{
+  content: "";
+  width: 300px;
+  height: 20px;
+  bottom: 10%;
+  background-color: rgba(216, 186, 122, 0.664);
+  position: absolute;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+h1:hover::before{
+  height: 55px;
+  
+  
+}
+
+.outlinetext{
+  text-shadow: -1px -1px 0 rgb(133, 68, 3), 1px -1px 0 rgb(133, 68, 3), 1px 1px 0 rgb(133, 68, 3),
+    1px 1px 0 rgb(133, 68, 3);
+}
+
+.btncolor{
+  background-color: bisque;
+}
+
+.eyefr{
+  background-color: rgb(133, 68, 3);
+}
+.eyefri{
+  background-color: rgb(234, 207, 172);
+}
+
+.brownbtn{
+  background-color: rgb(133, 68, 3);
+  color: aliceblue;
+  border-color: rgb(133, 68, 3);
+  transition: all 0.5s;
+}
+
+.brownbtn:hover{
+  background-color: rgb(173, 131, 90);
+  border-color: rgb(156, 125, 93);
+}

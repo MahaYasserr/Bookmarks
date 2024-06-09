@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.min.css">
+</head>
+<body>
+   
+    <h1 class="text-center mt-5 d-flex justify-content-center">Bookmarker</h1>
+    <h2 class="text-center outlinetext"><i class="fa fa-bookmark"></i> Bookmark your favorite sites <i class="fa fa-bookmark"></i></h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mb-3">
+                    <label for="bookmark" class="form-label outlinetext "><i class="fa fa-book-bookmark"></i> Site name</label>
+                    <input type="text" class="form-control" id="bookmark" placeholder="Bookmark name">
+                  </div>
+            </div>
+            <div class="col-md-12">
+                <div class="mb-3">
+                    <label for="bookmarkurl" class="form-label outlinetext"><i class="fa fa-link"></i> Site URL</label>
+                    <input  type="url" class="form-control" id="bookmarkurl" placeholder="Website URL">
+                  </div>
+            </div>
+            
+
+            
+        </div>
+        <div onclick="newBookmark()" class="btn  brownbtn ">Submit</div>
+    </div>
+
+    <div class="container mt-5 mb-4 ">
+        <div class="eyefr row  text-center pt-3 fw-bold">
+            <div class="col-md-3"><p>Index</p></div>
+            <div class="col-md-3"><p>Website name</p></div>
+            <div class="col-md-3"><p>Visit</p></div>
+            <div class="col-md-3"><p>Delete</p></div>
+        </div>
+        <div id="mydata">
+            
+        </div>
+        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
